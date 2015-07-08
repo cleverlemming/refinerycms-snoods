@@ -1,0 +1,33 @@
+cs:
+  refinery:
+    plugins:
+      snoods:
+        title: Snoods
+    snoods:
+      admin:
+        snoods:
+          actions:
+            create_new: Přidat Snood
+            reorder: Řadit Snoods
+            reorder_done: Konec řazení Snoods
+          records:
+            title: Snoods
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Snoods. Zvolte "Přidat Snood" pro přidání prvního snood.
+          snood:
+            view_live_html: Zobrazit náhled snood<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit snood
+            delete: Smazat snood
+      snoods:
+        show:
+          other: Další Snoods
+  activerecord:
+    attributes:
+      'refinery/snoods/snood':
+        first_name: First Name
+        last_name: Last Name
+        email: Email
+        phone: Phone
+        company: Company
+        download: Download
+        contactable: Contactable

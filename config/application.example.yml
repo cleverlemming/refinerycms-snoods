@@ -1,0 +1,27 @@
+
+development:
+  salesforce_oid: ""
+  mailer_host: "localhost:3000"
+  mailer_address: ""
+  mailer_port: 000
+  mailer_domain: "example.com"
+  mailer_user_name: "you@example.com"
+  mailer_password: ""
+  mailer_authentication: ""
+test:
+  mailer_host: "test.local"
+  mailer_address: ""
+  mailer_port: 
+  mailer_domain: ""
+  mailer_user_name: ""
+  mailer_password: ""
+  mailer_authentication: "plain"
+production:
+  mailer_host: "blog.example.com"
+  mailer_address: ""
+  mailer_port: 
+  mailer_domain: ""
+  mailer_user_name: ""
+  mailer_password: ""
+  mailer_authentication: "plain"
+

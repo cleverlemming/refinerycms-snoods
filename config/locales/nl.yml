@@ -1,0 +1,33 @@
+nl:
+  refinery:
+    plugins:
+      snoods:
+        title: Snoods
+    snoods:
+      admin:
+        snoods:
+          actions:
+            create_new: Nieuwe Snood toevoegen
+            reorder: De volgorde van de Snoods wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Snood-volgorde
+          records:
+            title: Snoods
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Snoods. Druk op 'Nieuwe Snood toevoegen' om de eerste toe te voegen.
+          snood:
+            view_live_html: Deze snood op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze snood
+            delete: Deze snood definitief verwijderen
+      snoods:
+        show:
+          other: Andere Snoods
+  activerecord:
+    attributes:
+      'refinery/snoods/snood':
+        first_name: First Name
+        last_name: Last Name
+        email: Email
+        phone: Phone
+        company: Company
+        download: Download
+        contactable: Contactable

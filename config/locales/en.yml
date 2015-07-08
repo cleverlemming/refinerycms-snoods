@@ -1,0 +1,33 @@
+en:
+  refinery:
+    plugins:
+      snoods:
+        title: Snoods
+    snoods:
+      admin:
+        snoods:
+          actions:
+            create_new: Add New Snood
+            reorder: Reorder Snoods
+            reorder_done: Done Reordering Snoods
+          records:
+            title: Snoods
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Snoods yet. Click "Add New Snood" to add your first snood.
+          snood:
+            view_live_html: View this snood live <br/><em>(opens in a new window)</em>
+            edit: Edit this snood
+            delete: Remove this snood forever
+      snoods:
+        show:
+          other: Other Snoods
+  activerecord:
+    attributes:
+      'refinery/snoods/snood':
+        first_name: First Name
+        last_name: Last Name
+        email: Email
+        phone: Phone
+        company: Company
+        download: Download
+        contactable: Contactable

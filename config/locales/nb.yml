@@ -1,0 +1,33 @@
+nb:
+  refinery:
+    plugins:
+      snoods:
+        title: Snoods
+    snoods:
+      admin:
+        snoods:
+          actions:
+            create_new: Lag en ny Snood
+            reorder: Endre rekkefølgen på Snoods
+            reorder_done: Ferdig å endre rekkefølgen Snoods
+          records:
+            title: Snoods
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Snoods enda. Klikk på "Lag en ny Snood" for å legge til din første snood.
+          snood:
+            view_live_html: Vis hvordan denne snood ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne snood
+            delete: Fjern denne snood permanent
+      snoods:
+        show:
+          other: Andre Snoods
+  activerecord:
+    attributes:
+      'refinery/snoods/snood':
+        first_name: First Name
+        last_name: Last Name
+        email: Email
+        phone: Phone
+        company: Company
+        download: Download
+        contactable: Contactable

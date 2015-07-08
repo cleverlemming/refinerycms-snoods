@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::Snoods::Admin::SnoodsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.snoods_admin_snoods_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_snoods_admin_snood_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::Snoods::Admin::SnoodsController.sortable? && ::Refinery::Snoods::Snood.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.snoods_admin_snoods_path,
+                     t('.reorder', what:  "Snoods"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.snoods_admin_snoods_path,
+                      t('.reorder_done', what: "Snoods"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

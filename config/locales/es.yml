@@ -1,0 +1,34 @@
+es:
+  refinery:
+    plugins:
+      snoods:
+        title: Snoods
+#        article: masculino/femenino
+    snoods:
+      admin:
+        snoods:
+          actions:
+            create_new: Crear nuevo snood
+            reorder: Reordenar snoods
+            reorder_done: Reordenación de snoods completada
+          records:
+            title: Snoods
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay snoods todavía. Pulsa en "Crear nuevo Snood" para crear tu primer snood.
+          snood:
+            view_live_html: Ver este snood como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este snood
+            delete: Borrar este snood para siempre
+      snoods:
+        show:
+          other: Otros snoods
+  activerecord:
+    attributes:
+      'refinery/snoods/snood':
+        first_name: First Name
+        last_name: Last Name
+        email: Email
+        phone: Phone
+        company: Company
+        download: Download
+        contactable: Contactable

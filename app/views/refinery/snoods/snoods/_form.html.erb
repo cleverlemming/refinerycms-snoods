@@ -1,0 +1,42 @@
+<%= form_for [refinery, :snoods, @snood] do |f| -%>
+  <%# render '/refinery/admin/error_messages',
+              :object => @snood,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :first_name -%>
+    <%= f.text_field :first_name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :last_name -%>
+    <%= f.text_field :last_name -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :email -%>
+    <%= f.text_field :email -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :phone -%>
+    <%= f.text_field :phone -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :company -%>
+    <%= f.text_field :company -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :download -%>
+    <%= f.text_field :download -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :contactable -%>
+    <%= f.check_box :contactable, :checked => @snood[:contactable] -%>
+  </div>
+
+ <%= f.submit t('.send') %>
+<% end %>

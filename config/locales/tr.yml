@@ -1,0 +1,33 @@
+tr:
+  refinery:
+    plugins:
+      snoods:
+        title: Snoods
+    snoods:
+      admin:
+        snoods:
+          actions:
+            create_new: Yeni Ekle Snood
+            reorder: Tekrar sirala Snoods
+            reorder_done: Tekrar siralama tamamlandiSnoods
+          records:
+            title: Snoods
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Snoods yok henuz.  Tikla "Yeni Ekle Snood" eklemek senin ilk snood.
+          snood:
+            view_live_html: Bunu canlu snood goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle snood
+            delete: Bunu Sil snood sonsuza dek
+      snoods:
+        show:
+          other: Diger Snoods
+  activerecord:
+    attributes:
+      'refinery/snoods/snood':
+        first_name: First Name
+        last_name: Last Name
+        email: Email
+        phone: Phone
+        company: Company
+        download: Download
+        contactable: Contactable
