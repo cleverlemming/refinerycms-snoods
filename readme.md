@@ -23,7 +23,7 @@ gem 'snoods', github: 'cleverlemming/refinerycms-snoods', branch: 'master'
 
 Now, run ``bundle install``
 
-Next, to install the snoods plugin run (check):
+Next, to install the snoods plugin run:
 
     rails generate refinery:snoods
 
