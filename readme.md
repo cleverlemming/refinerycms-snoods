@@ -18,7 +18,7 @@ This version of `refinerycms-jobs` supports Refinery 3.x and Rails 4.1.x.
 Open up your ``Gemfile`` and add at the bottom this line:
 
 ```ruby
-gem 'snoods', github: 'cleverlemming/refinerycms-snoods', branch: 'master'
+gem 'refinerycms-snoods', github: 'cleverlemming/refinerycms-snoods', branch: 'master'
 ```
 
 Now, run ``bundle install``
