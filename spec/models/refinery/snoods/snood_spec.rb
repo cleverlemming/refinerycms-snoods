@@ -6,7 +6,7 @@ module Refinery
       describe "validations", type: :model do
         subject do
           FactoryGirl.create(:snood,
-          :first_name => "Refinery CMS")
+          :first_name => "Refinery CMS", :email => "tef@poe.com")
         end
 
         it { should be_valid }

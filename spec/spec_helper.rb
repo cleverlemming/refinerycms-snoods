@@ -1,6 +1,9 @@
 # Configure Rails Environment
 ENV["RAILS_ENV"] ||= 'test'
 
+require 'simplecov'
+SimpleCov.start
+
 if File.exist?(dummy_path = File.expand_path('../dummy/config/environment.rb', __FILE__))
   require dummy_path
 elsif File.dirname(__FILE__) =~ %r{vendor/extensions}

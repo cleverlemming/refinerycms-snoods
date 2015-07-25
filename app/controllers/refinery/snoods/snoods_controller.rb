@@ -1,3 +1,5 @@
+# vendor/extensions/snoods/app/controllers/refinery/snoods/snoods_controller.rb
+
 module Refinery
   module Snoods
     class SnoodsController < ::ApplicationController

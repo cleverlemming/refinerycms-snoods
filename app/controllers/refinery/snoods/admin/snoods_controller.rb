@@ -1,7 +1,10 @@
+# vendor/extensions/snoods/app/controllers/refinery/snoods/admin/snoods_controller.rb
 module Refinery
   module Snoods
     module Admin
       class SnoodsController < ::Refinery::AdminController
+        
+        Refinery::Snoods::Admin::SnoodsController#create
         
         respond_to :html
         crudify :'refinery/snoods/snood', :title_attribute => 'last_name'
@@ -16,12 +19,20 @@ module Refinery
               @snood = Snood.find(params[:id])
               if @snood.update(snood_params)
                 redirect_to "/refinery/snoods"
+                flash[:notice] = "\'#{@snood.last_name}\' was successfully updated." 
                 #snoods/admin/snoods_path
               else
                 render 'edit'
               end
             end      
-                
+            
+            def new
+              @snood = Snood.new
+              @snood.contactable = true
+            end
+      
+             
+   
         def index
             @snoods = Snood.paginate(:page => params[:page], :per_page => 30)
             # you can use meta fields from your model instead (e.g. browser_title)
@@ -32,7 +43,7 @@ module Refinery
         def destroy
             @snood = Snood.find(params[:id])  
             @snood.destroy  
-            flash[:notice] = "Snood successfully destroyed."  
+            flash[:notice] = "\'#{@snood.last_name}\' was successfully removed."  
             redirect_to :back
         end
 

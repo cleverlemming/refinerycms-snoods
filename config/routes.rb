@@ -11,6 +11,8 @@ Refinery::Core::Engine.routes.draw do
   end
 match 'bravo' => 'snoods#bravo', :via => :get  
 
+ 
+
 end
 
   # Admin routes

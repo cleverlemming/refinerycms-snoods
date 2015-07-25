@@ -4,7 +4,7 @@ gemspec
 
 git 'https://github.com/refinery/refinerycms.git', :branch => 'master' do
   gem 'refinerycms'
-
+  
   group :development, :test do
     gem 'refinerycms-testing'
   end
@@ -26,6 +26,8 @@ end
 
 group :development, :test do
   gem 'rspec-its' # for the model's validation tests.
+   gem 'faker'
+   gem 'simplecov', :require => false
   platforms :ruby do
     require 'rbconfig'
     if RbConfig::CONFIG['target_os'] =~ /linux/i

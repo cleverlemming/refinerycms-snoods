@@ -1,0 +1,14 @@
+<%# render '/refinery/message' if request.xhr? %>
+
+<% if @snood.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@snood.errors.count, "error") %> prohibited this snood from being saved:</h2>
+
+      <ul>
+      <% @snood.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<%= yield %>

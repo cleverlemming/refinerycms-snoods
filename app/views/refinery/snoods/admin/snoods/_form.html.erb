@@ -1,7 +1,8 @@
+<%# vendor/extensions/snoods/app/views/refinery/snoods/admin/snoods/%>
 <%= form_for [refinery, :snoods_admin, @snood] do |f| -%>
 <%# form_for @snood, url: {action: "create"} do |f| %>
 <%# form_for [refinery, :snoods, @snood] do |f| %>
-  <%# render '/refinery/admin/error_messages',
+  <%= render '/refinery/snoods/admin/snoods/error_messages',
               :object => @snood,
               :include_object_name => true %>
 
@@ -9,6 +10,7 @@
     <%= f.label :first_name -%>
     <%= f.text_field :first_name -%>
   </div>
+ 
 
   <div class='field'>
     <%= f.label :last_name -%>
@@ -35,10 +37,10 @@
     <%= f.text_field :download -%>
   </div>
 
-  <div class='field'>
-    <%= f.label :contactable -%>
-    <%= f.check_box :contactable, :checked => @snood[:contactable] -%>
-  </div>
+ <div class='field'>
+   <%= f.label :contactable -%>
+   <%= f.check_box :contactable, :checked => @snood[:contactable] -%>
+ </div>
 
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,

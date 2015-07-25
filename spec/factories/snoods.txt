@@ -1,0 +1,8 @@
+# spec/factories/snoods.rb
+
+FactoryGirl.define do
+  factory :snood do
+    last_name 'Doe'
+    email 'doe@fictitious.com'
+    end
+  end
