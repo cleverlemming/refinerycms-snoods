@@ -35,6 +35,10 @@ Run database migrations:
 
 Copy application.example.yml to refinery's root config directory and be sure application.yml is in .gitignore (Figaro gem required). Figaro will add application.yml to .gitignore when you run ``figaro install.``
 
+### Testing
+
+Run tests from vendor/extensions/snoods. Open up coverage/index.html in a web browser to see test coverage (uses simplecov gem).
+
 
 
 
