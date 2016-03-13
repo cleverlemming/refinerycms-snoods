@@ -8,7 +8,7 @@ Snoods provides a basic form for embedding on lead generation/download pages. Th
 
 ## Requirements
 
-This version of `refinerycms-jobs` supports Refinery 3.x and Rails 4.1.x.
+This version of `refinerycms-snoods` supports Refinery 3.x and Rails 4.1.x.
 
 * [Refinery CMS](http://refinerycms.com) version 3.0.0 or above.
 * Figaro gem recommended for configuration
